@@ -2,14 +2,14 @@
 To update url, edit screen_on.sh.
 
 ## Edit the startup file
-sudo nano ~/.config/lxsession/LXDE-pi/autostart
+`sudo nano ~/.config/lxsession/LXDE-pi/autostart`
 
 ## Editing scripts
-nano ~/screen_on.sh 
-nano ~/screen_off.sh 
+`nano ~/screen_on.sh `
+`nano ~/screen_off.sh `
 
 ## Editing crontab
-crontab -e
+`crontab -e`
 
 # Install
 
@@ -19,24 +19,24 @@ Download and Rasbian image and follow install instructions.
 https://www.raspberrypi.org/downloads/raspbian/
 
 ## Uninstall unused packages
-1. sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
-2. sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
-3. sudo apt-get clean
-4. sudo apt-get autoremove -y
+1. `sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y`
+2. `sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y`
+3. `sudo apt-get clean`
+4. `sudo apt-get autoremove -y`
 
 ## Update all packages
-1. sudo apt-get update
-2. sudo apt-get upgrade -y
+1. `sudo apt-get update`
+2. `sudo apt-get upgrade -y`
 
 ## Install HDMI control package
-sudo apt-get install cec-client
+`sudo apt-get install cec-client`
 
 ## Hide cursor
 1. Install `sudo apt-get install unclutter`
 2. Configure `unclutter -idle 0.5 -root &`
 
 ## Chromium
-sudo apt-get install chromium-browser --yes
+`sudo apt-get install chromium-browser --yes`
 
 ## Set up SSH
 Raspi-config can be used in the terminal:
