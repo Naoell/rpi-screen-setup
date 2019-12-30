@@ -1,9 +1,9 @@
 # Screen on
-echo "on 0" | cec-client -s > /dev/null
+echo 'on 0' | cec-client -s -d 1
 # Wait for screen to turn on
 sleep 5
 # Change to the active input of the Pi
-echo "as" | cec-client -s > /dev/null
+echo 'as' | cec-client -s -d 1
 
 # Fire up chromium
 # Display no errors
